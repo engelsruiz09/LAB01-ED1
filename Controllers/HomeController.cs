@@ -23,6 +23,18 @@ namespace LAB01_ED1_G.Controllers
             return View();
         }
 
+        public IActionResult Create(string lista)
+        {
+            if (lista == "s")
+            {
+                return RedirectToAction("Index", "Single");
+            }
+            else
+            {
+                return RedirectToAction("Index", "Double");
+            }
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

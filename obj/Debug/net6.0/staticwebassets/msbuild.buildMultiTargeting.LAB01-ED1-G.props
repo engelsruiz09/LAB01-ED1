@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\LAB01-ED1-G.props" />
+</Project>

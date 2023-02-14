@@ -3,6 +3,23 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">BIENVENIDO</h1>
+    <p>BASE DE DATOS DE LOS JUGADORES DE LA MLS</p>
+</div>
+<div class="body text-center">
+    <br />
+    <br />
+    <br />
+    <form asp-action="Create">
+        <label>ESCOJA SU TIPO DE LISTA:</label><br />
+        <label>
+            <input type="radio" name="lista" value="s" required />
+             LISTA SIMPLE
+        </label>
+        <label>
+            <input type="radio" name="lista" value="d" />
+            LISTA DOBLEMENTE ENLAZADA
+        </label><br />
+        <input type="submit" value="CREAR"/>
+    </form>
 </div>
