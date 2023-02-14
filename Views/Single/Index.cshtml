@@ -1,0 +1,79 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model IEnumerable<LAB01_ED1_G.Models.jugador>
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Base de Datos</h1>
+
+<p>
+    <a asp-action="Create">Agregar nuevo</a>
+</p>
+<form asp-action="Index" method="post" enctype="multipart/form-data">
+    <input type="file" name="postedFile" />
+    <input type="submit" value="Import" />
+</form>
+<form asp-action="Log">
+    <label>Medición de tiempos:</label>
+    <input type="submit" value="Imprimir" />
+</form>
+<p>
+    Buscar por: <a asp-action="SearchN">Nombre y apellido</a> | <a asp-action="SearchC">Club</a> | <a asp-action="SearchP">Salario</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.club)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.apellido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.posicion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.salario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.compesation)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.club)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.apellido)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.posicion)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.salario)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.compesation)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.id }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.id })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

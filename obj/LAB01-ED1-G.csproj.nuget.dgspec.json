@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\julio\\source\\repos\\LAB01-ED1-G\\LAB01-ED1-G.csproj": {}
+    "C:\\Users\\julio\\Desktop\\LAB01-ED1\\LAB01-ED1-G.csproj": {}
   },
   "projects": {
-    "C:\\Users\\julio\\source\\repos\\LAB01-ED1-G\\LAB01-ED1-G.csproj": {
+    "C:\\Users\\julio\\Desktop\\LAB01-ED1\\LAB01-ED1-G.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\julio\\source\\repos\\LAB01-ED1-G\\LAB01-ED1-G.csproj",
+        "projectUniqueName": "C:\\Users\\julio\\Desktop\\LAB01-ED1\\LAB01-ED1-G.csproj",
         "projectName": "LAB01-ED1-G",
-        "projectPath": "C:\\Users\\julio\\source\\repos\\LAB01-ED1-G\\LAB01-ED1-G.csproj",
+        "projectPath": "C:\\Users\\julio\\Desktop\\LAB01-ED1\\LAB01-ED1-G.csproj",
         "packagesPath": "C:\\Users\\julio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\julio\\source\\repos\\LAB01-ED1-G\\obj\\",
+        "outputPath": "C:\\Users\\julio\\Desktop\\LAB01-ED1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,6 +44,22 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.13, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.11, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
