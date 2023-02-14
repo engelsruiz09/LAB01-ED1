@@ -118,5 +118,40 @@ namespace LAB01_ED1_G.Controllers
              //stopWatch.Stop();
             return View(Singleton._instance.PlayerList);
         }
+
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Create(IFormCollection collection)
+        {
+            stopWatch.Reset();
+            stopWatch.Start();
+            try
+            {
+                var newPlayer = new Models.jugador
+                {
+                    club = collection["club"],
+                    apellido = collection["apellido"],
+                    nombre = collection["nombre"],
+                    posicion = collection["posicion"],
+                    salario = Convert.ToInt32(collection["salario"]),
+                    compesation = Convert.ToInt32(collection["compensacion"]),
+                    id = i++
+                };
+                Singleton.Instance.PlayerList.Add(newPlayer);
+                //stopWatch.Stop();
+                //log += "[Create] - " + Convert.ToString(stopWatch.Elapsed) + '\n';
+                return RedirectToAction(nameof(Index));
+            }
+            catch
+            {
+                stopWatch.Stop();
+                return View();
+            }
+        }
+
     }
 }
