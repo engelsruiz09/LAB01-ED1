@@ -16,6 +16,8 @@ namespace LAB01_ED1_G.Controllers
         public static int i = 0;
         public static string log = "";
         Stopwatch stopWatch = new Stopwatch();
+        public Stopwatch cronometro2 = new Stopwatch();
+        public static bool Acceso = true;
         public static string SName = "";
         public static string SLName = "";
         public static decimal? SPay = 0;
@@ -26,12 +28,26 @@ namespace LAB01_ED1_G.Controllers
 
         private IWebHostEnvironment Environment;
 
+        public void Log(string Texto)
+        {
+            Texto = Texto + ". Tiempo: " + cronometro2.ElapsedMilliseconds + " Milisegundos \n";
+            string RutaTXT = @"Tiempos.txt";
+
+            System.IO.File.AppendAllText(RutaTXT, Texto);
+        }
+
+
+
         public DoubleController(IWebHostEnvironment _environment)
         {
             Environment = _environment;
         }
         public IActionResult Index()
         {
+            if (Acceso)
+            {
+                System.IO.File.WriteAllText(@"Tiempos.txt", "-------TIEMPOS DE LAS EJECUCIONES PRINCIPALES DEL PROGRAMA-------  \n \n");
+            }
             return View(Singleton.Instance1.PlayerDList);
         }
 
@@ -111,7 +127,11 @@ namespace LAB01_ED1_G.Controllers
                                             compesation = Compensation,
                                             id = i++
                                         };
+                                        Log("Lista Doble");
+                                        cronometro2.Restart();
                                         Singleton.Instance1.PlayerDList.Push(newPlayer);
+                                        cronometro2.Stop();
+                                        Log("Se creo un jugador");
                                     }
                                 }
                             }
