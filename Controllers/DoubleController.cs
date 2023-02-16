@@ -108,7 +108,7 @@ namespace LAB01_ED1_G.Controllers
                                             nombre = Name,
                                             posicion = Position,
                                             salario = Salary,
-                                            compesation = Compensation,
+                                            compesacion = Compensation,
                                             id = i++
                                         };
                                         Singleton.Instance1.PlayerDList.Push(newPlayer);
@@ -145,7 +145,7 @@ namespace LAB01_ED1_G.Controllers
                     nombre = collection["nombre"],
                     posicion = collection["posicion"],
                     salario = Convert.ToInt32(collection["salario"]),
-                    compesation = Convert.ToInt32(collection["compensacion"]),
+                    compesacion = Convert.ToInt32(collection["compensacion"]),
                     id = i++
                 };
                 Singleton.Instance1.PlayerDList.Push(newPlayer);
@@ -159,5 +159,19 @@ namespace LAB01_ED1_G.Controllers
                 return View();
             }
         }
+        /*public ActionResult Delete(int id, IFormCollection collection)
+        {
+            try
+            {
+                var DeletePlayer = Singleton.Instance.PlayerDList.Find(x => x.id == id);
+                int pos = Singleton.Instance.PlayerDList.IndexOf(DeletePlayer);
+                Singleton.Instance.PlayerDList.RemoveAt(pos);
+                return RedirectToAction(nameof(Index));
+            }
+            catch
+            {
+                return View();
+            }
+        }*/
     }
 }
