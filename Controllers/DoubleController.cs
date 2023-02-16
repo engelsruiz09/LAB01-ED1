@@ -41,7 +41,7 @@ namespace LAB01_ED1_G.Controllers
             stopWatch.Reset();
             stopWatch.Start();
             string Club = "", LName = "", Name = "", Position = "";
-            Decimal Salary = 0, Compensation = 0;
+            Decimal Salary = 0, compensacion = 0;
             if (postedFile != null)
             {
                 string path = Path.Combine(this.Environment.WebRootPath, "Uploads");
@@ -100,7 +100,7 @@ namespace LAB01_ED1_G.Controllers
                                     }
                                     else
                                     {
-                                        Compensation = Convert.ToDecimal(cell.Trim());
+                                        compensacion = Convert.ToDecimal(cell.Trim());
                                         var newPlayer = new jugador
                                         {
                                             club = Club,
@@ -108,7 +108,7 @@ namespace LAB01_ED1_G.Controllers
                                             nombre = Name,
                                             posicion = Position,
                                             salario = Salary,
-                                            compesacion = Compensation,
+                                            compensacion = compensacion,
                                             id = i++
                                         };
                                         Singleton.Instance1.PlayerDList.Push(newPlayer);
@@ -145,7 +145,7 @@ namespace LAB01_ED1_G.Controllers
                     nombre = collection["nombre"],
                     posicion = collection["posicion"],
                     salario = Convert.ToInt32(collection["salario"]),
-                    compesacion = Convert.ToInt32(collection["compensacion"]),
+                    compensacion = Convert.ToInt32(collection["compensacion"]),
                     id = i++
                 };
                 Singleton.Instance1.PlayerDList.Push(newPlayer);
