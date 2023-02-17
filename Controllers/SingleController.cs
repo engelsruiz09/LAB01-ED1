@@ -16,15 +16,29 @@ namespace LAB01_ED1_G.Controllers
 
         public static int i = 0;
         public static string log = "";
-        Stopwatch stopWatch = new Stopwatch();   
+        Stopwatch stopWatch = new Stopwatch();
+        public Stopwatch cronometro = new Stopwatch();
+        public static bool Acceso = true;
         private IWebHostEnvironment Environment;
+
+        public void Log(string Texto)
+        {
+            Texto = Texto + ". Tiempo: " + cronometro.ElapsedMilliseconds + " Milisegundos \n";
+            string RutaTXT = @"Tiempos.txt";
+
+            System.IO.File.AppendAllText(RutaTXT, Texto);
+        }
 
         public SingleController(IWebHostEnvironment _environment)
         {
             Environment = _environment;
-        }
+        } 
         public IActionResult Index()
         {
+            if (Acceso)
+            {
+                System.IO.File.WriteAllText(@"Tiempos.txt", "-------TIEMPOS DE LAS EJECUCIONES PRINCIPALES DEL PROGRAMA-------  \n \n");
+            }
             return View(Singleton._instance.PlayerList);
         }
 
@@ -104,7 +118,11 @@ namespace LAB01_ED1_G.Controllers
                                             compesation = Compensation,
                                             id = i++
                                         };
+                                        Log("Lista Simple");
+                                        cronometro.Restart();
                                         Singleton.Instance.PlayerList.Add(newPlayer);
+                                        cronometro.Stop();
+                                        Log("Se creo un jugador");
                                     }
                                 }
                             }
