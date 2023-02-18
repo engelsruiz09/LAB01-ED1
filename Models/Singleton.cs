@@ -6,7 +6,8 @@ namespace LAB01_ED1_G.Models.Data
     public sealed class Singleton
     {
         public readonly static Singleton _instance = new Singleton();
-        public System.Collections.Generic.List<jugador> PlayerList;
+        public System.Collections.Generic.List<equipo> EquipoList;
+
         public readonly static Singleton _instance1 = new Singleton();
         public ELineales.DoubleList<jugador> PlayerDList;
         public readonly static Singleton _instance2 = new Singleton();
@@ -15,7 +16,8 @@ namespace LAB01_ED1_G.Models.Data
         public ELineales.DoubleList<jugador> PlayerDSearch;
         private Singleton()
         {
-            PlayerList = new System.Collections.Generic.List<jugador>();
+            EquipoList = new System.Collections.Generic.List<equipo>();
+
             PlayerDList = new ELineales.DoubleList<jugador>();
             PlayerSearch = new System.Collections.Generic.List<jugador>();
             PlayerDSearch = new ELineales.DoubleList<jugador>();

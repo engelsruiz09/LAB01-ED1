@@ -10017,23 +10017,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\cdbarrientos\\.nuget\\packages\\": {},
+    "C:\\Users\\julio\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cdbarrientos\\Desktop\\Carlos\\Ingenieria en Infomatica y Sistems\\Primer Ciclo 2023\\Estructuras de datos I\\Labs\\LAB01-ED1\\LAB01-ED1-G.csproj",
+      "projectUniqueName": "C:\\Users\\julio\\Desktop\\LAB01-ED11.1.1]\\LAB01-ED1-G.csproj",
       "projectName": "LAB01-ED1-G",
-      "projectPath": "C:\\Users\\cdbarrientos\\Desktop\\Carlos\\Ingenieria en Infomatica y Sistems\\Primer Ciclo 2023\\Estructuras de datos I\\Labs\\LAB01-ED1\\LAB01-ED1-G.csproj",
-      "packagesPath": "C:\\Users\\cdbarrientos\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cdbarrientos\\Desktop\\Carlos\\Ingenieria en Infomatica y Sistems\\Primer Ciclo 2023\\Estructuras de datos I\\Labs\\LAB01-ED1\\obj\\",
+      "projectPath": "C:\\Users\\julio\\Desktop\\LAB01-ED11.1.1]\\LAB01-ED1-G.csproj",
+      "packagesPath": "C:\\Users\\julio\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\julio\\Desktop\\LAB01-ED11.1.1]\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\cdbarrientos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\julio\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -10095,7 +10095,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }
