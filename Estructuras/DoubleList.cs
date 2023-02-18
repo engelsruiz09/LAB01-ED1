@@ -7,155 +7,190 @@ namespace Estructuras
 {
     public class DoubleList<T> : IEnumerable<T>
     {
-        class NODE
+        private class Node<T>
         {
-            public T Data;
-            public NODE Prev;
-            public NODE Next;
-            public NODE(T data)
-            {
-                Data = data;
-            }
-        };
-        NODE Top;
+            public T Value;
 
-        public void Push(T data)
-        {
-            NODE AddNew = new NODE(data);
-            AddNew.Next = Top;
-            AddNew.Prev = null;
-            if (Top != null)
+            public Node<T> next;
+            public Node<T> Behind;
+            public Node()
             {
-                Top.Prev = AddNew;
+                this.next = null;
+                this.Behind = null;
             }
-            Top = AddNew;
         }
-        public int Count()
+        Node<T> start;
+        Node<T> end;
+        int count;
+        int eleminados = 0;
+
+        public DoubleList()
         {
-            int contador = 0;
-            NODE count = Top;
-            while (count != null)
-            {
-                contador++;
-                count = count.Next;
-            }
-            return contador;
+            start = null;
+            end = null;
+            count = 0;
         }
-        public void Delete(T remove)
+
+        bool IsEmpty()
         {
-            if (remove.Equals(Top.Data))
+            if (count - eleminados == 0)
             {
-                Top = Top.Next;
-                return;
+                return true;
             }
-            NODE temp = Top;
-            while (temp != null)
+            return false;
+        }
+
+        public void Push(T dato)
+        {
+            Node<T> new_node = new Node<T>();
+            new_node.Value = dato;
+
+            if (IsEmpty())
             {
-                if (temp.Next.Data.Equals(remove))
+                start = new_node;
+                end = new_node;
+            }
+            else
+            {
+                end.next = new_node;
+                new_node.Behind = end;
+                end = new_node;
+            }
+
+            count++;
+            return;
+        }
+
+        public void RemoveAt(int index)
+        {
+
+            Node<T> actual;
+            Node<T> anterior;
+            actual = start;
+            int i = 1;
+            while (actual != null && i < index)
+            {
+                anterior = actual;
+                actual = actual.next;
+                i++;
+
+            }
+            if (actual == start)
+            {
+                if (start.next == null)
                 {
-                    NODE prev = temp;
-                    NODE del = temp.Next.Next;
-                    prev.Next = del;
-                    if (del != null)
-                    {
-                        del.Prev = prev;
-                    }
-                    return;
+                    start = start.next;
+                    eleminados++;
                 }
                 else
                 {
-                    temp = temp.Next;
+                    start = start.next;
+                    start.Behind = null;
+                    eleminados++;
                 }
             }
-        }
-        private IEnumerable<T> Events()
-        {
-            NODE temp = Top;
-            while (temp != null)
+            else if (actual == end)
             {
-                yield return temp.Data;
-                temp = temp.Next;
+                end = end.Behind;
+                end.next = null;
+                eleminados++;
+            }
+            else
+            {
+                actual.Behind.next = actual.next;
+                actual.next.Behind = actual.Behind;
+                eleminados++;
             }
         }
-        public IEnumerator<T> GetEnumerator()
+        public void Posi(int index, T model)
         {
-            return Events().GetEnumerator();
+            Node<T> actual;
+            if (index == 1)
+            {
+                start.Value = model;
+            }
+            else
+            {
+                actual = start;
+                for (int i = 1; i < index; i++)
+                {
+
+                    actual = actual.next;
+
+                }
+                actual.Value = model;
+            }
+        }
+        public int Find2(Predicate<T> match)
+        {
+            Node<T> actual;
+            actual = start;
+            int i = 0;
+            while (!match.Invoke(actual.Value))
+            {
+                i++;
+                actual = actual.next;
+            }
+            return i;
+        }
+        public T Find(Predicate<T> match)
+        {
+            Node<T> actual;
+            actual = start;
+            int i = 1;
+            while (actual != null)
+            {
+                if (match.Invoke(actual.Value)) //match es un delegado que verifica una condición
+                {
+                    return actual.Value;
+                }
+                actual = actual.next;
+                i++;
+            }
+            return default(T);
+        }
+        public DoubleList<T> FindAll(Predicate<T> match)
+        {
+            DoubleList<T> resultados = new DoubleList<T>();
+            Node<T> actual;
+            actual = start;
+            int i = 1;
+            while (actual != null)
+            {
+                if (match.Invoke(actual.Value)) //match es un delegado que verifica una condición
+                {
+                    resultados.Push(actual.Value);
+                }
+                actual = actual.next;
+                i++;
+            }
+            return resultados;
         }
 
+        public int Count()
+        {
+
+            return count - eleminados;
+        }
+        public int Count2()
+        {
+
+            return count;
+        }
+
+        public IEnumerator<T> GetEnumerator()
+        {
+            var Node = start;
+            while (Node != null)
+            {
+                yield return Node.Value;
+                Node = Node.next;
+            }
+        }
         IEnumerator IEnumerable.GetEnumerator()
         {
             return GetEnumerator();
         }
-        public void Foreach(Action<T> action)
-        {
-            NODE temp = Top;
-            while (temp != null)
-            {
-                action(temp.Data);
-                temp = temp.Next;
-            }
-        }
-        public int IndexOf(T item)
-        {
-            int pos = 0;
-            NODE actual = Top;
-            while (actual.Next != null)
-            {
-                if (actual.Data.Equals(item))
-                {
-                    return pos;
-                }
-                else
-                {
-                    actual = actual.Next;
-                    pos++;
-                }
-            }
-            return -1;
-        }
-
-        public T this[int index]
-        {
-            get
-            {
-                NODE temp = Top;
-                int cont = 0;
-                while (temp != null)
-                {
-                    if (cont == index)
-                    {
-                        return temp.Data;
-                    }
-                    else
-                    {
-                        temp = temp.Next;
-                        cont++;
-                    }
-                }
-                throw new System.ArgumentNullException("OutOfRange");
-            }
-            set
-            {
-                NODE temp = Top;
-                int cont = 0;
-                while (temp != null)
-                {
-                    if (cont == index)
-                    {
-                        temp.Data = value;
-                        break;
-                    }
-                    else
-                    {
-                        temp = temp.Next;
-                        cont++;
-                    }
-                }
-            }
-        }
-        public void Clear()
-        {
-            Top = null;
-        }
     }
+
 }

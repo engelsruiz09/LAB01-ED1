@@ -51,7 +51,7 @@ namespace LAB01_ED1_G.Controllers
                     using (TextFieldParser csvFile = new TextFieldParser(FilePath))
                     {
 
-                        csvFile.CommentTokens = new string[] { "#" };
+                        //csvFile.CommentTokens = new string[] { "#" };
                         csvFile.SetDelimiters(new string[] { "," });
                         csvFile.HasFieldsEnclosedInQuotes = true;
 
