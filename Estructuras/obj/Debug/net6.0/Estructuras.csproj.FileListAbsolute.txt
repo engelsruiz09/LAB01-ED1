@@ -1,0 +1,12 @@
+C:\Users\julio\Desktop\LAB01-ED1\Estructuras\bin\Debug\net6.0\Estructuras.deps.json
+C:\Users\julio\Desktop\LAB01-ED1\Estructuras\bin\Debug\net6.0\Estructuras.dll
+C:\Users\julio\Desktop\LAB01-ED1\Estructuras\bin\Debug\net6.0\Estructuras.pdb
+C:\Users\julio\Desktop\LAB01-ED1\Estructuras\obj\Debug\net6.0\Estructuras.csproj.AssemblyReference.cache
+C:\Users\julio\Desktop\LAB01-ED1\Estructuras\obj\Debug\net6.0\Estructuras.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\julio\Desktop\LAB01-ED1\Estructuras\obj\Debug\net6.0\Estructuras.AssemblyInfoInputs.cache
+C:\Users\julio\Desktop\LAB01-ED1\Estructuras\obj\Debug\net6.0\Estructuras.AssemblyInfo.cs
+C:\Users\julio\Desktop\LAB01-ED1\Estructuras\obj\Debug\net6.0\Estructuras.csproj.CoreCompileInputs.cache
+C:\Users\julio\Desktop\LAB01-ED1\Estructuras\obj\Debug\net6.0\Estructuras.dll
+C:\Users\julio\Desktop\LAB01-ED1\Estructuras\obj\Debug\net6.0\refint\Estructuras.dll
+C:\Users\julio\Desktop\LAB01-ED1\Estructuras\obj\Debug\net6.0\Estructuras.pdb
+C:\Users\julio\Desktop\LAB01-ED1\Estructuras\obj\Debug\net6.0\ref\Estructuras.dll

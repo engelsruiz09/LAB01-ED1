@@ -7,74 +7,83 @@
     ViewData["Title"] = "Create";
 }
 
-@*<h1>Base de Datos</h1>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Lora:wght@500&family=Noto+Serif&family=Quicksand:wght@500&display=swap" rel="stylesheet">
 
-<p>
-    <a asp-action="Create">Agregar nuevo</a>
-</p>
 <form asp-action="Index" method="post" enctype="multipart/form-data">
     <input type="file" name="postedFile" />
     <input type="submit" value="Import" />
 </form>
+<br />
 <form asp-action="Log">
     <label>Medición de tiempos:</label>
     <input type="submit" value="Imprimir" />
 </form>
+<br />
 <p>
-    Buscar por: <a asp-action="SearchN">Nombre y apellido</a> | <a asp-action="SearchC">Club</a> | <a asp-action="SearchP">Salario</a>
+    Buscar por: <a asp-action="SearchN">Nombre</a>  |  <a asp-action="SearchA">Apellido</a>  |  <a asp-action="SearchR">Rol</a>  |  <a asp-action="SearchKDA">KDA</a>  |  <a asp-action="SearchCreep">Creep Score</a>  |  <a asp-action="SearchEquipo">Equipo</a>
 </p>
+<p>
+    <a asp-action="Create" style="color: red">Nuevo Jugador</a>
+
+</p>
+<body>
+    <style>
+        body {
+            background-image: url('https://i.postimg.cc/tCVmZcxw/Dise-o-sin-t-tulo.png');
+            background-repeat: no-repeat;
+            background-size: 2000px;
+        }
+    </style>
+    <div class="card">
+        <img class="card-img" src='https://i.postimg.cc/ZYfYTBTq/Nuevo-equipo-3.png' border='0' alt='Equipos-inscritos'>
+    </div>
+    <br />
+</body>
+<br />
+<br />
 <table class="table">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.club)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.apellido)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.nombre)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.posicion)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.salario)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Compensation)
-            </th>
+            <th>Nombre</th>
+            <th>Apelllido</th>
+            <th>Rol</th>
+            <th>KDA</th>
+            <th>CreepScore</th>
+            <th>Equipo</th>
         </tr>
+
     </thead>
     <tbody>
+
         @foreach (var item in Model)
         {
             <tr>
                 <td>
-                    @Html.DisplayFor(modelItem => item.club)
+                    @Html.DisplayFor(modelItem => item.Nombre)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.apellido)
+                    @Html.DisplayFor(modelItem => item.Apellido)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.nombre)
+                    @Html.DisplayFor(modelItem => item.Rol)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.posicion)
+                    @Html.DisplayFor(modelItem => item.KDA)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.salario)
+                    @Html.DisplayFor(modelItem => item.CreepScore)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Compensation)
+                    @Html.DisplayFor(modelItem => item.Equipo)
                 </td>
                 <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.id }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.id }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.id })
+                    @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ID })
                 </td>
             </tr>
         }
     </tbody>
-</table>*@
-
+</table>

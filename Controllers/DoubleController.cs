@@ -8,156 +8,120 @@ using LAB01_ED1_G.Models;
 using LAB01_ED1_G.Models.Data;
 using System.Diagnostics;
 using System.Numerics;
+using Microsoft.VisualBasic.FileIO;
 
 namespace LAB01_ED1_G.Controllers
 {
-    public class DoubleController : Controller
+    public class DoubleController : Controller  // el double controller es para los jugadores se utiliza la lista doblemente
     {
-    //    public static int i = 0;
-    //    public static string log = "";
-    //    Stopwatch stopWatch = new Stopwatch();
-    //    public static string SName = "";
-    //    public static string SLName = "";
-    //    public static decimal? SPay = 0;
-    //    public static string SClub = "";
-    //    public static int Id = 0;
-    //    public static jugador IDFinder = new jugador();
-    //    public static string PayFinder = "";
+        public static int i = 0;
+        public static string log = "";
+        private IWebHostEnvironment Environment;
 
-    //    private IWebHostEnvironment Environment;
+        public DoubleController(IWebHostEnvironment _environment)
+        {
+            Environment = _environment;
+        }
+        public IActionResult Index()
+        {
+            return View(Singleton.Instance1.JugadorDList);
+        }
 
-    //    public DoubleController(IWebHostEnvironment _environment)
-    //    {
-    //        Environment = _environment;
-    //    }
-    //    public IActionResult Index()
-    //    {
-    //        return View(Singleton.Instance1.PlayerDList);
-    //    }
+        [HttpPost]
+        public ActionResult Index(IFormFile postedFile)
+        {
+            try
+            {
+                string Nombre = "", Apellido = "", Rol = "", Equipo = "";
+                decimal KDA = 0;
+                int Creep_Score = 0;
+                if (postedFile != null)
+                {
+                    string path = Path.Combine(this.Environment.WebRootPath, "Uploads");
+                    if (!Directory.Exists(path))
+                    {
+                        Directory.CreateDirectory(path);
+                    }
+                    string FileName = Path.GetFileName(postedFile.FileName);
+                    string FilePath = Path.Combine(path, FileName);
+                    using (FileStream stream = new FileStream(FilePath, FileMode.Create))
+                    {
+                        postedFile.CopyTo(stream);
+                    }
+                    using (TextFieldParser csvFile = new TextFieldParser(FilePath))
+                    {
 
-    //    [HttpPost]
-    //    public ActionResult Index(IFormFile postedFile)
-    //    {
-    //        stopWatch.Reset();
-    //        stopWatch.Start();
-    //        string Club = "", LName = "", Name = "", Position = "";
-    //        Decimal Salary = 0, Compensation = 0;
-    //        if (postedFile != null)
-    //        {
-    //            string path = Path.Combine(this.Environment.WebRootPath, "Uploads");
-    //            if (!Directory.Exists(path))
-    //            {
-    //                Directory.CreateDirectory(path);
-    //            }
+                        csvFile.CommentTokens = new string[] { "#" };
+                        csvFile.SetDelimiters(new string[] { "," });
+                        csvFile.HasFieldsEnclosedInQuotes = true;
 
-    //            string fileName = Path.GetFileName(postedFile.FileName);
-    //            string filePath = Path.Combine(path, fileName);
-    //            using (FileStream stream = new FileStream(filePath, FileMode.Create))
-    //            {
-    //                postedFile.CopyTo(stream);
-    //            }
-    //            string csvData = System.IO.File.ReadAllText(filePath);
-    //            bool firstRow = true;
-    //            foreach (string row in csvData.Split('\n'))
-    //            {
-    //                if (!string.IsNullOrEmpty(row))
-    //                {
-    //                    if (!string.IsNullOrEmpty(row))
-    //                    {
-    //                        if (firstRow)
-    //                        {
-    //                            firstRow = false;
-    //                        }
-    //                        else
-    //                        {
-    //                            int y = 0;
-    //                            foreach (string cell in row.Split(','))
-    //                            {
-    //                                if (y == 0)
-    //                                {
-    //                                    Club = cell.Trim();
-    //                                    y++;
-    //                                }
-    //                                else if (y == 1)
-    //                                {
-    //                                    LName = cell.Trim();
-    //                                    y++;
-    //                                }
-    //                                else if (y == 2)
-    //                                {
-    //                                    Name = cell.Trim();
-    //                                    y++;
-    //                                }
-    //                                else if (y == 3)
-    //                                {
-    //                                    Position = cell.Trim();
-    //                                    y++;
-    //                                }
-    //                                else if (y == 4)
-    //                                {
-    //                                    Salary = Convert.ToDecimal(cell.Trim());
-    //                                    y++;
-    //                                }
-    //                                else
-    //                                {
-    //                                    Compensation = Convert.ToDecimal(cell.Trim());
-    //                                    var newPlayer = new jugador
-    //                                    {
-    //                                        club = Club,
-    //                                        apellido = LName,
-    //                                        nombre = Name,
-    //                                        posicion = Position,
-    //                                        salario = Salary,
-    //                                        Compensation = Compensation,
-    //                                        id = i++
-    //                                    };
-    //                                    Singleton.Instance1.PlayerDList.Push(newPlayer);
-    //                                }
-    //                            }
-    //                        }
-    //                    }
-    //                }
-    //            }
-    //            //stopWatch.Stop();
-    //            //log += "[CSV Upload] - " + Convert.ToString(stopWatch.Elapsed) + '\n';
-    //            return View(Singleton._instance1.PlayerDList);
-    //        }
-    //        //stopWatch.Stop();
-    //        return View(Singleton._instance1.PlayerDList);
-    //    }
+                        csvFile.ReadLine();
 
-    //    public ActionResult Create()
-    //    {
-    //        return View();
-    //    }
+                        while (!csvFile.EndOfData)
+                        {
+                            string[] fields = csvFile.ReadFields();
+                            Nombre = Convert.ToString(fields[0]);
+                            Apellido = Convert.ToString(fields[1]);
+                            Rol = Convert.ToString(fields[2]);
+                            KDA = Convert.ToDecimal(fields[3]);
+                            Creep_Score = Convert.ToInt32(fields[4]);
+                            Equipo = Convert.ToString(fields[5]);
+                            var NewJugador = new jugador
+                            {
 
-    //    [HttpPost]
-    //    public ActionResult Create(IFormCollection collection)
-    //    {
-    //        stopWatch.Reset();
-    //        stopWatch.Start();
-    //        try
-    //        {
-    //            var newPlayer = new Models.jugador
-    //            {
-    //                club = collection["club"],
-    //                apellido = collection["apellido"],
-    //                nombre = collection["nombre"],
-    //                posicion = collection["posicion"],
-    //                salario = Convert.ToInt32(collection["salario"]),
-    //                Compensation = Convert.ToInt32(collection["Compensation"]),
-    //                id = i++
-    //            };
-    //            Singleton.Instance1.PlayerDList.Push(newPlayer);
-    //            //stopWatch.Stop();
-    //            //log += "[Create] - " + Convert.ToString(stopWatch.Elapsed) + '\n';
-    //            return RedirectToAction(nameof(Index));
-    //        }
-    //        catch
-    //        {
-    //            stopWatch.Stop();
-    //            return View();
-    //        }
-    //    }
+                                Nombre = Nombre,
+                                Apellido = Apellido,
+                                Rol = Rol,
+                                KDA = KDA,
+                                CreepScore = Creep_Score,
+                                Equipo = Equipo,
+                                ID = i++
+                            };
+
+                            Singleton.Instance1.JugadorDList.Push(NewJugador);
+                            
+                        }
+                    }
+                }
+                return RedirectToAction(nameof(Index));
+            }
+            catch (Exception)
+            {
+                ViewData["Message"] = "Algo sucedio mal";
+                return RedirectToAction(nameof(Index));
+            }
+        }
+
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Create(IFormCollection collection)
+        {
+            try
+            {
+                var NewJugador = new Models.jugador
+                {
+
+                   
+                    Nombre = collection["Nombre"],
+                    Apellido = collection["Apellido"],
+                    Rol = collection["Rol"],
+                    KDA = Convert.ToDecimal(collection["KDA"]),
+                    CreepScore = Convert.ToInt32(collection["CreepScore"]),
+                    Equipo = collection["Equipo"],
+                    ID = i++
+
+                };
+                Singleton.Instance1.JugadorDList.Push(NewJugador);
+                return RedirectToAction(nameof(Index));
+            }
+            catch
+            {
+                return View();
+            }
+        }
     }
 }

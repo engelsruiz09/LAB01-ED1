@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.VisualBasic.FileIO;
 
-namespace LAB01_ED1_G.Controllers
+namespace LAB01_ED1_G.Controllers //el single controller es con la lista normal y es para equipos
 {
     public class SingleController : Controller
     {

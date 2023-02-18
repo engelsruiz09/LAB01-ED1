@@ -15,11 +15,17 @@
     <input type="file" name="postedFile" />
     <input type="submit" value="Import" />
 </form>
+<br />
+<form asp-action="Log">
+    <label>Medición de tiempos:</label>
+    <input type="submit" value="Imprimir" />
+</form>
+<br />
 <p>
     Buscar por: <a asp-action="SearchN">Nombre Equipo</a>  |  <a asp-action="SearchC">Coach</a>  |  <a asp-action="SearchL">Liga</a>  |  <a asp-action="SearchF">Fecha Creacion</a>
 </p>
 <p>
-    <a asp-action="Create" style="color: #614D66">Nuevo equipo</a>
+    <a asp-action="Create" style="color:red">Nuevo equipo</a>
 
 </p>
 <body> 

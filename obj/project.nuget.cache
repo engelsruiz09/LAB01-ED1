@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "X0Gop8/7u/hnqIBfVoYhEZic2m5skrgIqHmIwzBAEFHr9jjeKWlO7T7EYrIHuLs5SB4TFTdFQ27XXmhjRLGY3Q==",
+  "dgSpecHash": "1oIkDQdGjT9Q+GTTgRmUc4Mr9zFPCOx+cw5L4o8YqhJAaLcTEQV3kOFEdCqgZqPDmStQXH+rC5lyqoFi1L7mmQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\julio\\Desktop\\LAB01-ED11.1.1]\\LAB01-ED1-G.csproj",
+  "projectFilePath": "C:\\Users\\julio\\Desktop\\LAB01-ED1\\LAB01-ED1-G.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\julio\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\julio\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

@@ -1,6 +1,6 @@
 ﻿using System.Numerics;
 using System.Collections.Generic;
-using ELineales;
+using Estructuras;
 namespace LAB01_ED1_G.Models.Data
 {
     public sealed class Singleton
@@ -9,18 +9,20 @@ namespace LAB01_ED1_G.Models.Data
         public System.Collections.Generic.List<equipo> EquipoList;
 
         public readonly static Singleton _instance1 = new Singleton();
-        public ELineales.DoubleList<jugador> PlayerDList;
+        public Estructuras.DoubleList<jugador> JugadorDList;
+
         public readonly static Singleton _instance2 = new Singleton();
         public System.Collections.Generic.List<jugador> PlayerSearch;
         public readonly static Singleton _instance3 = new Singleton();
-        public ELineales.DoubleList<jugador> PlayerDSearch;
+        public Estructuras.DoubleList<jugador> PlayerDSearch;
         private Singleton()
         {
             EquipoList = new System.Collections.Generic.List<equipo>();
 
-            PlayerDList = new ELineales.DoubleList<jugador>();
+            JugadorDList = new Estructuras.DoubleList<jugador>();
+
             PlayerSearch = new System.Collections.Generic.List<jugador>();
-            PlayerDSearch = new ELineales.DoubleList<jugador>();
+            PlayerDSearch = new Estructuras.DoubleList<jugador>();
         }
         public static Singleton Instance
         {
