@@ -16,7 +16,18 @@ namespace LAB01_ED1_G.Controllers
     {
         public static int i = 0;
         public static string log = "";
+        public Stopwatch cronometro2= new Stopwatch();
+        public static bool Acceso = true;
+
         private IWebHostEnvironment Environment;
+
+        public void Log(string Texto)
+        {
+            Texto = Texto + ". Tiempo: " + cronometro2.ElapsedMilliseconds + " Milisegundos \n";
+            string RutaTXT = @"Tiempos.txt";
+
+            System.IO.File.AppendAllText(RutaTXT, Texto);
+        }
 
         public DoubleController(IWebHostEnvironment _environment)
         {
@@ -77,9 +88,11 @@ namespace LAB01_ED1_G.Controllers
                                 Equipo = Equipo,
                                 ID = i++
                             };
-
+                            Log("Lista de Jugadores");
+                            cronometro2.Restart();
                             Singleton.Instance1.JugadorDList.Push(NewJugador);
-
+                            cronometro2.Stop();
+                            Log("Se Creo Un Jugador");
                         }
                     }
                 }

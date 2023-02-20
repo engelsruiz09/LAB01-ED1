@@ -21,7 +21,17 @@ namespace LAB01_ED1_G.Controllers //el single controller es con la lista normal 
         public static int i = 0;
         public static string log = "";
         Stopwatch stopWatch = new Stopwatch();
+        public Stopwatch cronometro = new Stopwatch();
+        public static bool Acceso = true;
+
         private IWebHostEnvironment Environment;
+
+        public void Log(string Texto)
+        {
+            Texto = Texto + ". Y Tardo: " + cronometro.ElapsedMilliseconds + " Milisegundos \n \n";
+            string RutaTXT = @"Tiempos.txt";
+            System.IO.File.AppendAllText(RutaTXT, Texto);
+        }
 
         public SingleController(IWebHostEnvironment _environment)
         {
@@ -29,6 +39,11 @@ namespace LAB01_ED1_G.Controllers //el single controller es con la lista normal 
         }
         public IActionResult Index()
         {
+            if (Acceso)
+            {
+                System.IO.File.WriteAllText(@"Tiempos.txt", "-------TIEMPOS DE LAS EJECUCIONES PRINCIPALES DEL PROGRAMA-------  \n \n");
+                Acceso = false;
+            }
             return View(Singleton._instance.EquipoList);
         }
 
@@ -78,7 +93,11 @@ namespace LAB01_ED1_G.Controllers //el single controller es con la lista normal 
                                 FechaCreacion = FechaCreacion,
                                 ID = i++
                             };
+                            Log("Lista de Equipos");
+                            cronometro.Start();
                             Singleton.Instance.EquipoList.Add(NewTeam);
+                            cronometro.Stop();
+                            Log("Se Creo Un Equipo");
 
                         }
                     }
