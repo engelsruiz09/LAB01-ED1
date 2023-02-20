@@ -1,0 +1,26 @@
+-------TIEMPOS DE LAS EJECUCIONES PRINCIPALES DEL PROGRAMA-------  
+ 
+Lista de Equipos. Y Tardo: 0 Milisegundos 
+ 
+Se Creo Un Equipo. Y Tardo: 0 Milisegundos 
+ 
+Lista de Equipos. Y Tardo: 0 Milisegundos 
+ 
+Se Creo Un Equipo. Y Tardo: 0 Milisegundos 
+ 
+Lista de Equipos. Y Tardo: 0 Milisegundos 
+ 
+Se Creo Un Equipo. Y Tardo: 0 Milisegundos 
+ 
+Lista de Equipos. Y Tardo: 0 Milisegundos 
+ 
+Se Creo Un Equipo. Y Tardo: 0 Milisegundos 
+ 
+Lista de Equipos. Y Tardo: 0 Milisegundos 
+ 
+Se Creo Un Equipo. Y Tardo: 0 Milisegundos 
+ 
+Lista de Equipos. Y Tardo: 0 Milisegundos 
+ 
+Se Creo Un Equipo. Y Tardo: 0 Milisegundos 
+ 

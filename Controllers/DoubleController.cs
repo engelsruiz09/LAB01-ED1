@@ -142,7 +142,11 @@ namespace LAB01_ED1_G.Controllers
             {
                 try
                 {
+                    cronometro2.Restart();
                     var valorFiltrado = Singleton.Instance1.JugadorDList.Where(p => p.Nombre == valor).ToList();
+                    Log("Busqueda Por Nombre Del Jugador");
+                    cronometro2.Stop();
+                    Log("Se encontro jugador por nombre");
                     return View(valorFiltrado);
                 }
                 catch (Exception)
@@ -156,7 +160,11 @@ namespace LAB01_ED1_G.Controllers
             {
                 try
                 {
+                    cronometro2.Restart();
                     var valorFiltrado = Singleton.Instance1.JugadorDList.Where(p => p.Apellido == valor).ToList();
+                    Log("Busqueda Por Apellido Del Jugador");
+                    cronometro2.Stop();
+                    Log("Se encontro al jugador por apellido");
                     return View(valorFiltrado);
                 }
                 catch (Exception)
@@ -169,7 +177,11 @@ namespace LAB01_ED1_G.Controllers
             {
                 try
                 {
+                    cronometro2.Restart();
                     var valorFiltrado = Singleton.Instance1.JugadorDList.Where(p => p.Rol == valor).ToList();
+                    Log("Busqueda Por Rol Del Jugador");
+                    cronometro2.Stop();
+                    Log("Se encontro al jugador por rol");
                     return View(valorFiltrado);
                 }
                 catch (Exception)
@@ -183,10 +195,14 @@ namespace LAB01_ED1_G.Controllers
             {
                 try
                 {
+                    cronometro2.Restart();
                     decimal valorDecimalKDA;
                     if (decimal.TryParse(valor, out valorDecimalKDA))
                     {
                         var valorFiltrado = Singleton.Instance1.JugadorDList.Where(p => p.KDA == decimal.Parse(valor)).ToList();
+                        Log("Busqueda Por KDA Del Jugador");
+                        cronometro2.Stop();
+                        Log("Se encontro al jugador por KDA");
                         return View(valorFiltrado);
                     }
                     else
@@ -205,10 +221,14 @@ namespace LAB01_ED1_G.Controllers
             {
                 try
                 {
+                    cronometro2.Restart();
                     int valorIntCS;
                     if (int.TryParse(valor, out valorIntCS))
                     {
                         var valorFiltrado = Singleton.Instance1.JugadorDList.Where(p => p.CreepScore == int.Parse(valor)).ToList();
+                        Log("Busqueda Por CreepScore Del Jugador");
+                        cronometro2.Stop();
+                        Log("Se encontro al jugador por CreepScore");
                         return View(valorFiltrado);
                     }
                     else
@@ -225,7 +245,11 @@ namespace LAB01_ED1_G.Controllers
             {
                 try
                 {
+                    cronometro2.Restart();
                     var valorFiltrado = Singleton.Instance1.JugadorDList.Where(p => p.Equipo == valor.ToUpper()).ToList();
+                    Log("Busqueda Por Nombre Del Equipo");
+                    cronometro2.Stop();
+                    Log("Se encontraron los siguientes jugadores en su equipo");
                     return View(valorFiltrado);
                 }
                 catch (Exception)

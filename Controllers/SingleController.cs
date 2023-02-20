@@ -149,7 +149,11 @@ namespace LAB01_ED1_G.Controllers //el single controller es con la lista normal 
             {
                 try
                 {
+                    cronometro.Restart();
                     var valorFiltrado = Singleton.Instance.EquipoList.Where(p => p.NombreEquipo == valor).ToList();
+                    Log("Busqueda Por Nombre Del Equipo");
+                    cronometro.Stop();
+                    Log("Se encontro al equipo por su nombre");
                     return View(valorFiltrado);
                 }
                 catch (Exception)
@@ -162,7 +166,11 @@ namespace LAB01_ED1_G.Controllers //el single controller es con la lista normal 
             {
                 try
                 {
+                    cronometro.Restart();
                     var valorFiltrado = Singleton.Instance.EquipoList.Where(p => p.Coach == valor).ToList();
+                    Log("Busqueda Por Coach Del Equipo");
+                    cronometro.Stop();
+                    Log("Se encontro al equipo por coach");
                     return View(valorFiltrado);
                 }
                 catch (Exception)
@@ -175,7 +183,11 @@ namespace LAB01_ED1_G.Controllers //el single controller es con la lista normal 
             {
                 try
                 {
+                    cronometro.Restart();
                     var valorFiltrado = Singleton.Instance.EquipoList.Where(p => p.Liga == valor).ToList();
+                    Log("Busqueda Por Liga Del Equipo");
+                    cronometro.Stop();
+                    Log("Se encontro los siguientes equipor por su liga");
                     return View(valorFiltrado);
                 }
                 catch (Exception)
@@ -188,7 +200,11 @@ namespace LAB01_ED1_G.Controllers //el single controller es con la lista normal 
             {
                 try
                 {
+                    cronometro.Restart();
                     var valorFiltrado = Singleton.Instance.EquipoList.Where(p => p.FechaCreacion == DateTime.ParseExact(valor, "dd/MM/yyyy", CultureInfo.InvariantCulture)).ToList();
+                    Log("Busqueda Por Fecha Creacion Del Equipo");
+                    cronometro.Stop();
+                    Log("Se encontro al equipo por su fecha de creacion");
                     return View(valorFiltrado);
                 }
                 catch (Exception)
