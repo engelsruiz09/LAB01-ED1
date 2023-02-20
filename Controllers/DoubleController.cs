@@ -173,6 +173,23 @@ namespace LAB01_ED1_G.Controllers
                 }
 
             }
+            else if (filtro_equipo == "NombreCompleto")
+            {
+                try
+                {
+                    cronometro2.Restart();
+                    var valorFiltrado = Singleton.Instance1.JugadorDList.Where(p => (p.Nombre+" "+ p.Apellido) == valor).ToList();
+                    Log("Busqueda Por Nombre Completo Del Jugador");
+                    cronometro2.Stop();
+                    Log("Se encontro al jugador por Nombre Completo");
+                    return View(valorFiltrado);
+                }
+                catch (Exception)
+                {
+                    return View();
+                }
+
+            }
             else if (filtro_equipo == "Rol")
             {
                 try
