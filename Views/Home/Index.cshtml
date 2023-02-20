@@ -3,34 +3,34 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">BIENVENIDO</h1>
+
+
+    <img src="https://i.pinimg.com/originals/95/e2/be/95e2beeff28cf0ca9a65acc6616c0bd6.png" width="400" style="" />
+    <h1 class="display-4 text-light">BIENVENIDO</h1>
     <section class="hero-section">
         <div class="hero-slider owl-carousel">
             <div class="hs-item set-bg">
                 <video id="video" style="position: absolute; bottom: 0px; right: 0px; min-width: 100%; min-height: 100%; width: auto; height: auto; z-index: -1000; overflow: hidden; filter: brightness(30%); " loop autoplay muted>
                     <source src="https://www.leagueoflegends.com/static/hero-0632cbf2872c5cc0dffa93d2ae8a29e8.webm">
-               </video>
-                <img src="https://i.pinimg.com/originals/95/e2/be/95e2beeff28cf0ca9a65acc6616c0bd6.png" width="400" style="position: absolute;left: 40px; bottom:50px;"  />
-                <div class="hs-text">
-               </div>
+                </video>
             </div>
         </div>
     </section>
 </div>
 <div class="body text-center">
-    <br />
-    <br />
-    <br />
     <form asp-action="Create">
-        <label>ESCOJA :</label><br />
-        <label>
-            <input type="radio" name="lista" value="s" required />
-             LISTA DE SIMPLE EQUIPOS
-        </label>
-        <label>
-            <input type="radio" name="lista" value="d" />
-            LISTA DOBLE DE JUGADORES
-        </label><br />
-        <input type="submit" value="CREAR"/>
+        <div class="text-center mb-3">
+            <label class="text-light">ESCOJA :</label><br />
+        </div>        
+        <div class="text-center mb-3">
+        <select name="lista" class="form-select">
+            <option selected>Abre esta opcion para seleccinar tu lista!</option>
+            <option value="s">Lista Simple para Equipos</option>
+            <option value="d">Lista Doble para Jugadores</option>
+        </select>
+        </div>        
+        <div class="text-center mb-3">
+            <input type="submit" value="CREAR" class="btn btn-danger" />
+        </div>
     </form>
 </div>

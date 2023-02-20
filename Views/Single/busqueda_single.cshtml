@@ -1,0 +1,51 @@
+﻿@model List<LAB01_ED1_G.Models.equipo>
+<div class="container">
+    <div class="text-center mb-3">
+        <form class="form" asp-action="busqueda_single">
+            <div class="mb-3">
+        <h2 class="display-4">Formulario de Busqueda de Equipos </h2>
+        <h3>¿Por cuál Filtro desea buscar?</h3>
+    </div>
+            <div class ="mb-3">
+    <select name="filtro_equipo" class="form-select">
+        <option selected>Selecciona el filtro aqui</option>
+        <option value="nombreEquipo" selected>Nombre del Equipo</option>
+        <option value="coachEquipo">Coach del Equipo</option>
+        <option value="ligaEquipo">Liga del Equipo</option>
+        <option value="fechaCreacion">Fecha de Creacion del Equipo</option>
+    </select>
+    </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" name="valor"/>
+            </div>
+    <div class="mb-3">
+        <input type="submit" class="btn btn-danger"/>
+    </div>
+        </form>
+    </div>
+    <div>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <td>Nombre</td>
+                    <td>Coach</td>
+                    <td>Liga</td>
+                    <td>Fecha</td>
+                </tr>
+            </thead>
+            <tbody>
+                @if(Model != null){
+                    @foreach (var personaActual in Model)
+                    {
+                        <tr>
+                          <td>@personaActual.NombreEquipo</td>
+                            <td>@personaActual.Coach</td>
+                            <td>@personaActual.Liga</td>
+                            <td>@personaActual.FechaCreacion</td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

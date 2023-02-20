@@ -79,7 +79,7 @@ namespace LAB01_ED1_G.Controllers
                             };
 
                             Singleton.Instance1.JugadorDList.Push(NewJugador);
-                            
+
                         }
                     }
                 }
@@ -105,7 +105,7 @@ namespace LAB01_ED1_G.Controllers
                 var NewJugador = new Models.jugador
                 {
 
-                   
+
                     Nombre = collection["Nombre"],
                     Apellido = collection["Apellido"],
                     Rol = collection["Rol"],
@@ -122,6 +122,106 @@ namespace LAB01_ED1_G.Controllers
             {
                 return View();
             }
+        }
+        public ActionResult busqueda_double(string filtro_equipo, string valor)
+        {
+            if (filtro_equipo == "Nombre")
+            {
+                try
+                {
+                    var valorFiltrado = Singleton.Instance1.JugadorDList.Where(p => p.Nombre == valor).ToList();
+                    return View(valorFiltrado);
+                }
+                catch (Exception)
+                {
+
+                    return View();
+                }
+
+            }
+            else if (filtro_equipo == "Apellido")
+            {
+                try
+                {
+                    var valorFiltrado = Singleton.Instance1.JugadorDList.Where(p => p.Apellido == valor).ToList();
+                    return View(valorFiltrado);
+                }
+                catch (Exception)
+                {
+                    return View();
+                }
+
+            }
+            else if (filtro_equipo == "Rol")
+            {
+                try
+                {
+                    var valorFiltrado = Singleton.Instance1.JugadorDList.Where(p => p.Rol == valor).ToList();
+                    return View(valorFiltrado);
+                }
+                catch (Exception)
+                {
+                    return View();
+                    throw;
+                }
+
+            }
+            else if (filtro_equipo == "KDA")
+            {
+                try
+                {
+                    decimal valorDecimalKDA;
+                    if (decimal.TryParse(valor, out valorDecimalKDA))
+                    {
+                        var valorFiltrado = Singleton.Instance1.JugadorDList.Where(p => p.KDA == decimal.Parse(valor)).ToList();
+                        return View(valorFiltrado);
+                    }
+                    else
+                    {
+                        return View();
+                    }
+                }
+                catch (Exception)
+                {
+                    return View();
+                }
+
+
+            }
+            else if (filtro_equipo == "CreepScore")
+            {
+                try
+                {
+                    int valorIntCS;
+                    if (int.TryParse(valor, out valorIntCS))
+                    {
+                        var valorFiltrado = Singleton.Instance1.JugadorDList.Where(p => p.CreepScore == int.Parse(valor)).ToList();
+                        return View(valorFiltrado);
+                    }
+                    else
+                    {
+                        return View();
+                    }
+                }
+                catch (Exception)
+                {
+                    return View();
+                }
+            }
+            else if (filtro_equipo == "Equipo")
+            {
+                try
+                {
+                    var valorFiltrado = Singleton.Instance1.JugadorDList.Where(p => p.Equipo == valor.ToUpper()).ToList();
+                    return View(valorFiltrado);
+                }
+                catch (Exception)
+                {
+                    return View();
+                }
+
+            }
+            return View();
         }
     }
 }

@@ -23,7 +23,7 @@
         <img class="card-img" src='https://i.postimg.cc/j2Hct0fV/Nuevo-equipo-2.png' border='0' alt='Inscribir equipo'>
     </div>
     <br />
-    <div class="row">
+    <div class="row mb-3">
         <div class="col-md-4">
             <form asp-action="Create">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -59,16 +59,16 @@
                 </div>
                 <br />
                 <div class="form-group">
-                    <input type="submit" value="Agregar" class="btn btn-primary" />
+                    <input type="submit" value="Agregar" class="btn btn-danger" />
                 </div>
             </form>
         </div>
     </div>
-    <br />
-</body>
+
 <div>
-    <a asp-action="Index">Regresar a lista</a>
+    <a asp-action="Index" class="btn btn-danger">Regresar a lista</a>
 </div>
+</body>
 
 @section Scripts {
     @{

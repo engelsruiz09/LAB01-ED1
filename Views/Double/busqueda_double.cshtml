@@ -1,0 +1,61 @@
+﻿@model List<LAB01_ED1_G.Models.jugador>
+<div class="container">
+    <div class="text-center mb-3">
+        <form class="form" asp-action="busqueda_double">
+            <div class="mb-3">
+                <h2 class="display-4">Formulario de Busqueda de Equipos </h2>
+                <h3>¿Por cuál Filtro desea buscar?</h3>
+            </div>
+            <div class="mb-3">
+                <select name="filtro_equipo" class="form-select">
+                    <option selected>Selecciona tu filtro aqui</option>
+                    <option value="Nombre" selected>Nombre de Jugador</option>
+                    <option value="Apellido">Coach del Equipo</option>
+                    <option value="Rol">Rol</option>
+                    <option value="KDA">KDA</option>
+                    <option value="CreepScore">Creep Score</option>
+                    <option value="Equipo">Equipo</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" name="valor" />
+            </div>
+            <div class="mb-3">
+                <input type="submit" class="btn btn-danger" />
+            </div>
+        </form>
+    </div>
+    <div>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <td>Nombre</td>
+                    <td>Apellido</td>
+                    <td>Rol</td>
+                    <td>KDA</td>
+                    <td>Creep Score</td>
+                    <td>Equipo</td>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null)
+                {
+                    @foreach (var personaActual in Model)
+                    {
+                        <tr>
+                            <td>@personaActual.Nombre</td>
+                            <td>@personaActual.Apellido</td>
+                            <td>@personaActual.Rol</td>
+                            <td>@personaActual.KDA</td>
+                            <td>@personaActual.CreepScore</td>
+                            <td>@personaActual.Equipo</td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="mt-3">
+        <a asp-action="Index" class="btn btn-danger">Regresar a lista</a>
+    </div>
+</div>

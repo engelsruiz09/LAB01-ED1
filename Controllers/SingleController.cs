@@ -9,6 +9,9 @@ using System.Numerics;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.VisualBasic.FileIO;
+using System.Linq;
+using System.Drawing;
+using System.Globalization;
 
 namespace LAB01_ED1_G.Controllers //el single controller es con la lista normal y es para equipos
 {
@@ -17,7 +20,7 @@ namespace LAB01_ED1_G.Controllers //el single controller es con la lista normal 
 
         public static int i = 0;
         public static string log = "";
-        Stopwatch stopWatch = new Stopwatch();   
+        Stopwatch stopWatch = new Stopwatch();
         private IWebHostEnvironment Environment;
 
         public SingleController(IWebHostEnvironment _environment)
@@ -76,7 +79,7 @@ namespace LAB01_ED1_G.Controllers //el single controller es con la lista normal 
                                 ID = i++
                             };
                             Singleton.Instance.EquipoList.Add(NewTeam);
-                            
+
                         }
                     }
                 }
@@ -120,6 +123,63 @@ namespace LAB01_ED1_G.Controllers //el single controller es con la lista normal 
                 return View();
             }
         }
+        public ActionResult busqueda_single(string filtro_equipo, string valor)
+        {
+            List<equipo> listaRetorno = new List<equipo>();
+            if (filtro_equipo == "nombreEquipo")
+            {
+                try
+                {
+                    var valorFiltrado = Singleton.Instance.EquipoList.Where(p => p.NombreEquipo == valor).ToList();
+                    return View(valorFiltrado);
+                }
+                catch (Exception)
+                {
+                    return View();
+                }
 
+            }
+            else if (filtro_equipo == "coachEquipo")
+            {
+                try
+                {
+                    var valorFiltrado = Singleton.Instance.EquipoList.Where(p => p.Coach == valor).ToList();
+                    return View(valorFiltrado);
+                }
+                catch (Exception)
+                {
+                    return View();
+                }
+
+            }
+            else if (filtro_equipo == "ligaEquipo")
+            {
+                try
+                {
+                    var valorFiltrado = Singleton.Instance.EquipoList.Where(p => p.Liga == valor).ToList();
+                    return View(valorFiltrado);
+                }
+                catch (Exception)
+                {
+                    return View();
+                }
+
+            }
+            else if (filtro_equipo == "fechaCreacion")
+            {
+                try
+                {
+                    var valorFiltrado = Singleton.Instance.EquipoList.Where(p => p.FechaCreacion == DateTime.ParseExact(valor, "dd/MM/yyyy", CultureInfo.InvariantCulture)).ToList();
+                    return View(valorFiltrado);
+                }
+                catch (Exception)
+                {
+
+                    return View();
+                }
+
+            }
+            return View();
+        }
     }
 }
