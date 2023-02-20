@@ -181,5 +181,20 @@ namespace LAB01_ED1_G.Controllers //el single controller es con la lista normal 
             }
             return View();
         }
+        public ActionResult Delete(int id, IFormCollection collection)
+        {
+            try
+            {
+                var DeleteEquipo = Singleton.Instance.EquipoList.Find(x => x.ID == id);
+                int pos = Singleton.Instance.EquipoList.IndexOf(DeleteEquipo);
+                Singleton.Instance.EquipoList.RemoveAt(pos);
+                return RedirectToAction(nameof(Index));
+            }
+            catch
+            {
+                return View();
+            }
+        }
     }
 }
+
