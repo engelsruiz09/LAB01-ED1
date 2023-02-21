@@ -285,8 +285,12 @@ namespace LAB01_ED1_G.Controllers
         [HttpPost]
         public ActionResult Edit(int id, string newRol, string newTeam)
         {
+            cronometro2.Restart();
+            Log("Edicion de equipo");
+
             foreach (var player in Singleton.Instance1.JugadorDList)
             {
+                
                 if (player.ID == id)
                 {
                     if (newRol != "Selecciona el rol aqui")
@@ -297,8 +301,10 @@ namespace LAB01_ED1_G.Controllers
                     {
                         player.Equipo = newTeam;
                     }
+                    cronometro2.Stop();
+                    Log("Se modifico el siguiente jugador de su equipo");
+                    return View();
                 }
-                return View();
             }
             return View();
         }
