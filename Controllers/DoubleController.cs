@@ -308,5 +308,18 @@ namespace LAB01_ED1_G.Controllers
             }
             return View();
         }
+        public ActionResult Delete(int id, IFormCollection collection)
+        {
+            try
+            {
+                int pos = Singleton.Instance1.JugadorDList.Find2(x => x.ID == id);
+                Singleton.Instance1.JugadorDList.RemoveAt(pos+1);
+                return RedirectToAction(nameof(Index));
+            }
+            catch
+            {
+                return View();
+            }
+        }
     }
 }
