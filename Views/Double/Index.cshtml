@@ -50,10 +50,6 @@
     <div class="text-start mb-3 d-flex justify-content-around align-content-center">
         <a id="my-button" asp-action="busqueda_double" class="btn btn-danger">Puedes Buscar tu jugador favorito aquí!</a>
         <a asp-action="Create" class="btn btn-danger">Nuevo Jugador</a>
-        <form asp-action="Log">
-            <label>Medición de tiempos:</label>
-            <input type="submit" value="Imprimir" class="btn btn-danger" />
-        </form>
     </div>
     <div>
         <table id="my-table" class="table table-hover">
@@ -91,8 +87,8 @@
                         <td>
                             @Html.DisplayFor(modelItem => item.Equipo)
                         </td>
-                        <td>
-                            @Html.ActionLink("Edit", "Edit", new { id = item.ID })  |
+                        <td>                        
+                            @Html.ActionLink("Edit", "Edit", "Double",  new { id = item.ID})  |
                             @Html.ActionLink("Delete", "Delete", new { id = item.ID })
                         </td>
                     </tr>
