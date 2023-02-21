@@ -1,0 +1,31 @@
+﻿@model List<LAB01_ED1_G.Models.jugador>
+<div class="container">
+    <div class="text-center mb-3">
+        <form class="form" asp-action="Edit">
+            <div class="mb-3">
+                <h2 class="display-4">Formulario de Edicion de Jugador</h2>
+                <h3>Porfavor seleccione el nuevo rol y equipo del jugador.</h3>
+            </div>
+            <div class="mb-3">
+                <select name="newRol" class="form-select">
+                    <option selected>Selecciona el rol aqui</option>
+                    <option value="Top">Top</option>
+                    <option value="Jungla">Jungla</option>
+                    <option value="Mid">Mid</option>
+                    <option value="ADC">ADC</option>
+                    <option value="Support">Support</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="newTeam">Ingrese el equipo aqui</label>
+            </div>
+             <div class="mb-3">
+                <input type="text" class="form-control" name="newTeam" />
+                <input type="submit" class="btn btn-danger" />
+            </div>
+        </form>
+    </div>
+    <div class="text-start">
+        <a asp-action="Index" class="btn btn-danger">Regresar a la lista</a>
+    </div>
+</div>
