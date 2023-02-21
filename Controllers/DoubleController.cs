@@ -299,10 +299,6 @@ namespace LAB01_ED1_G.Controllers
                     }
                 }
             }
-            if (newRol == "Selecciona el rol aqui" && newTeam == null)
-            {
-                Log("No se ingresaron nuevos valores");
-            }
             return View();
         }
     }

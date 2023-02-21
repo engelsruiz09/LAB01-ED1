@@ -216,5 +216,30 @@ namespace LAB01_ED1_G.Controllers //el single controller es con la lista normal 
             }
             return View();
         }
+
+        public ActionResult Edit()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Edit(int id, string newCoach, string newLeague)
+        {
+            foreach (var team in Singleton.Instance.EquipoList)
+            {
+                if(team.ID == id)
+                {
+                    if (newCoach != null)
+                    {
+                        team.Coach = newCoach;
+                    }
+                    if (newLeague != null)
+                    {
+                        team.Liga = newLeague;
+                    }
+                }
+               
+            }
+            return View();
+        }
     }
 }
