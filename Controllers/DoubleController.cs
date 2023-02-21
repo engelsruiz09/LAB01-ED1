@@ -298,6 +298,7 @@ namespace LAB01_ED1_G.Controllers
                         player.Equipo = newTeam;
                     }
                 }
+                return View();
             }
             return View();
         }

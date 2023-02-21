@@ -237,7 +237,7 @@ namespace LAB01_ED1_G.Controllers //el single controller es con la lista normal 
                         team.Liga = newLeague;
                     }
                 }
-               
+                return View();
             }
             return View();
         }
