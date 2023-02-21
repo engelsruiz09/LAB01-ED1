@@ -21,17 +21,7 @@ namespace LAB01_ED1_G.Controllers //el single controller es con la lista normal 
         public static int i = 0;
         public static string log = "";
         Stopwatch stopWatch = new Stopwatch();
-        public Stopwatch cronometro = new Stopwatch();
-        public static bool Acceso = true;
-
         private IWebHostEnvironment Environment;
-
-        public void Log(string Texto)
-        {
-            Texto = Texto + ". Y Tardo: " + cronometro.ElapsedMilliseconds + " Milisegundos \n \n";
-            string RutaTXT = @"Tiempos.txt";
-            System.IO.File.AppendAllText(RutaTXT, Texto);
-        }
 
         public SingleController(IWebHostEnvironment _environment)
         {
@@ -39,11 +29,6 @@ namespace LAB01_ED1_G.Controllers //el single controller es con la lista normal 
         }
         public IActionResult Index()
         {
-            if (Acceso)
-            {
-                System.IO.File.WriteAllText(@"Tiempos.txt", "-------TIEMPOS DE LAS EJECUCIONES PRINCIPALES DEL PROGRAMA-------  \n \n");
-                Acceso = false;
-            }
             return View(Singleton._instance.EquipoList);
         }
 
@@ -93,11 +78,7 @@ namespace LAB01_ED1_G.Controllers //el single controller es con la lista normal 
                                 FechaCreacion = FechaCreacion,
                                 ID = i++
                             };
-                            Log("Lista de Equipos");
-                            cronometro.Start();
                             Singleton.Instance.EquipoList.Add(NewTeam);
-                            cronometro.Stop();
-                            Log("Se Creo Un Equipo");
 
                         }
                     }
@@ -149,11 +130,7 @@ namespace LAB01_ED1_G.Controllers //el single controller es con la lista normal 
             {
                 try
                 {
-                    cronometro.Restart();
                     var valorFiltrado = Singleton.Instance.EquipoList.Where(p => p.NombreEquipo == valor).ToList();
-                    Log("Busqueda Por Nombre Del Equipo");
-                    cronometro.Stop();
-                    Log("Se encontro al equipo por su nombre");
                     return View(valorFiltrado);
                 }
                 catch (Exception)
@@ -166,11 +143,7 @@ namespace LAB01_ED1_G.Controllers //el single controller es con la lista normal 
             {
                 try
                 {
-                    cronometro.Restart();
                     var valorFiltrado = Singleton.Instance.EquipoList.Where(p => p.Coach == valor).ToList();
-                    Log("Busqueda Por Coach Del Equipo");
-                    cronometro.Stop();
-                    Log("Se encontro al equipo por coach");
                     return View(valorFiltrado);
                 }
                 catch (Exception)
@@ -183,11 +156,7 @@ namespace LAB01_ED1_G.Controllers //el single controller es con la lista normal 
             {
                 try
                 {
-                    cronometro.Restart();
                     var valorFiltrado = Singleton.Instance.EquipoList.Where(p => p.Liga == valor).ToList();
-                    Log("Busqueda Por Liga Del Equipo");
-                    cronometro.Stop();
-                    Log("Se encontro los siguientes equipor por su liga");
                     return View(valorFiltrado);
                 }
                 catch (Exception)
@@ -200,11 +169,7 @@ namespace LAB01_ED1_G.Controllers //el single controller es con la lista normal 
             {
                 try
                 {
-                    cronometro.Restart();
                     var valorFiltrado = Singleton.Instance.EquipoList.Where(p => p.FechaCreacion == DateTime.ParseExact(valor, "dd/MM/yyyy", CultureInfo.InvariantCulture)).ToList();
-                    Log("Busqueda Por Fecha Creacion Del Equipo");
-                    cronometro.Stop();
-                    Log("Se encontro al equipo por su fecha de creacion");
                     return View(valorFiltrado);
                 }
                 catch (Exception)
@@ -216,35 +181,20 @@ namespace LAB01_ED1_G.Controllers //el single controller es con la lista normal 
             }
             return View();
         }
-
-        public ActionResult Edit()
+        public ActionResult Delete(int id, IFormCollection collection)
         {
-            return View();
-        }
-        [HttpPost]
-        public ActionResult Edit(int id, string newCoach, string newLeague)
-        {
-            cronometro.Restart();
-            Log("Modificacion de equipo");
-
-            foreach (var team in Singleton.Instance.EquipoList)
+            try
             {
-                if(team.ID == id)
-                {
-                    if (newCoach != null)
-                    {
-                        team.Coach = newCoach;
-                    }
-                    if (newLeague != null)
-                    {
-                        team.Liga = newLeague;
-                    }
-                    cronometro.Stop();
-                    Log("Se modifico al equipo por sus parametros respectivos");
-                    return View();
-                }
+                var DeleteEquipo = Singleton.Instance.EquipoList.Find(x => x.ID == id);
+                int pos = Singleton.Instance.EquipoList.IndexOf(DeleteEquipo);
+                Singleton.Instance.EquipoList.RemoveAt(pos);
+                return RedirectToAction(nameof(Index));
             }
-            return View();
+            catch
+            {
+                return View();
+            }
         }
     }
 }
+
