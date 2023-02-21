@@ -1,0 +1,105 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model IEnumerable<LAB01_ED1_G.Models.jugador>
+@section scripts {
+    <script>
+        $(document).ready(function () {
+            var myTable = $('#my-table');
+            var myButton = $('#my-button');
+            if (myTable.find('tr').length <= 2) {
+                myButton.hide();
+            }
+        });
+    </script>
+}
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Lora:wght@500&family=Noto+Serif&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+
+<body>
+    <style>
+        body {
+            background-image: url('https://i.postimg.cc/tCVmZcxw/Dise-o-sin-t-tulo.png');
+            background-repeat: no-repeat;
+            background-size: 2000px;
+        }
+    </style>
+    <div class="card">
+        <img class="card-img" src='https://i.postimg.cc/ZYfYTBTq/Nuevo-equipo-3.png' border='0' alt='Equipos-inscritos'>
+    </div>
+    <br />
+    <form asp-action="Index" method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label for="formFile" class="form-label">Aqui se muestra el archivo que vas a importar</label>
+            <input type="file" name="postedFile" class="form-control" id="formFile" />
+        </div>
+        <div class="mb-2">
+            <input type="submit" value="Import" class="btn btn-danger" />
+        </div>
+
+    </form>
+    <br />
+
+    <br />
+    <div class="text-start mb-3 d-flex justify-content-around align-content-center">
+        <a id="my-button" asp-action="busqueda_double" class="btn btn-danger">Puedes Buscar tu jugador favorito aquí!</a>
+        <a asp-action="Create" class="btn btn-danger">Nuevo Jugador</a>
+        <form asp-action="Log">
+            <label>Medición de tiempos:</label>
+            <input type="submit" value="Imprimir" class="btn btn-danger" />
+        </form>
+    </div>
+    <div>
+        <table id="my-table" class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apelllido</th>
+                    <th>Rol</th>
+                    <th>KDA</th>
+                    <th>CreepScore</th>
+                    <th>Equipo</th>
+                </tr>
+
+            </thead>
+            <tbody>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Nombre)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Apellido)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Rol)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.KDA)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CreepScore)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Equipo)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", new { id = item.ID })  |
+                            @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
