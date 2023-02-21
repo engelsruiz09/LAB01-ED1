@@ -277,5 +277,33 @@ namespace LAB01_ED1_G.Controllers
             }
             return View();
         }
+
+        public ActionResult Edit()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Edit(int id, string newRol, string newTeam)
+        {
+            foreach (var player in Singleton.Instance1.JugadorDList)
+            {
+                if (player.ID == id)
+                {
+                    if (newRol != "Selecciona el rol aqui")
+                    {
+                        player.Rol = newRol;
+                    }
+                    if (newTeam != null)
+                    {
+                        player.Equipo = newTeam;
+                    }
+                }
+            }
+            if (newRol == "Selecciona el rol aqui" && newTeam == null)
+            {
+                Log("No se ingresaron nuevos valores");
+            }
+            return View();
+        }
     }
 }
