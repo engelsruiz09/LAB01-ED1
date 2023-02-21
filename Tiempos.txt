@@ -1,0 +1,328 @@
+-------TIEMPOS DE LAS EJECUCIONES PRINCIPALES DEL PROGRAMA-------  
+ 
+Lista de Equipos. Y Tardo: 0 Milisegundos 
+ 
+Se Creo Un Equipo. Y Tardo: 0 Milisegundos 
+ 
+Lista de Equipos. Y Tardo: 0 Milisegundos 
+ 
+Se Creo Un Equipo. Y Tardo: 0 Milisegundos 
+ 
+Lista de Equipos. Y Tardo: 0 Milisegundos 
+ 
+Se Creo Un Equipo. Y Tardo: 0 Milisegundos 
+ 
+Lista de Equipos. Y Tardo: 0 Milisegundos 
+ 
+Se Creo Un Equipo. Y Tardo: 0 Milisegundos 
+ 
+Lista de Equipos. Y Tardo: 0 Milisegundos 
+ 
+Se Creo Un Equipo. Y Tardo: 0 Milisegundos 
+ 
+Lista de Equipos. Y Tardo: 0 Milisegundos 
+ 
+Se Creo Un Equipo. Y Tardo: 0 Milisegundos 
+ 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 1 Milisegundos 
+Lista de Jugadores. Tiempo: 1 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 1 Milisegundos 
+Lista de Jugadores. Tiempo: 1 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 4 Milisegundos 
+Lista de Jugadores. Tiempo: 4 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 3 Milisegundos 
+Lista de Jugadores. Tiempo: 3 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 1 Milisegundos 
+Lista de Jugadores. Tiempo: 1 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 2 Milisegundos 
+Lista de Jugadores. Tiempo: 2 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 0 Milisegundos 
+Edicion de equipo. Tiempo: 0 Milisegundos 
+Se modifico el siguiente jugador de su equipo. Tiempo: 1 Milisegundos 
