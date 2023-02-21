@@ -10,3 +10,15 @@ C:\Users\julio\Desktop\LAB01-ED1\Estructuras\obj\Debug\net6.0\Estructuras.dll
 C:\Users\julio\Desktop\LAB01-ED1\Estructuras\obj\Debug\net6.0\refint\Estructuras.dll
 C:\Users\julio\Desktop\LAB01-ED1\Estructuras\obj\Debug\net6.0\Estructuras.pdb
 C:\Users\julio\Desktop\LAB01-ED1\Estructuras\obj\Debug\net6.0\ref\Estructuras.dll
+C:\Users\eddie\OneDrive - Universidad Rafael Landivar\U\Año 5\Primer Ciclo\Estructura de Datos 1 (lab)\PreLab1\5\LAB01-ED1\Estructuras\bin\Debug\net6.0\Estructuras.deps.json
+C:\Users\eddie\OneDrive - Universidad Rafael Landivar\U\Año 5\Primer Ciclo\Estructura de Datos 1 (lab)\PreLab1\5\LAB01-ED1\Estructuras\bin\Debug\net6.0\Estructuras.dll
+C:\Users\eddie\OneDrive - Universidad Rafael Landivar\U\Año 5\Primer Ciclo\Estructura de Datos 1 (lab)\PreLab1\5\LAB01-ED1\Estructuras\bin\Debug\net6.0\Estructuras.pdb
+C:\Users\eddie\OneDrive - Universidad Rafael Landivar\U\Año 5\Primer Ciclo\Estructura de Datos 1 (lab)\PreLab1\5\LAB01-ED1\Estructuras\obj\Debug\net6.0\Estructuras.csproj.AssemblyReference.cache
+C:\Users\eddie\OneDrive - Universidad Rafael Landivar\U\Año 5\Primer Ciclo\Estructura de Datos 1 (lab)\PreLab1\5\LAB01-ED1\Estructuras\obj\Debug\net6.0\Estructuras.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eddie\OneDrive - Universidad Rafael Landivar\U\Año 5\Primer Ciclo\Estructura de Datos 1 (lab)\PreLab1\5\LAB01-ED1\Estructuras\obj\Debug\net6.0\Estructuras.AssemblyInfoInputs.cache
+C:\Users\eddie\OneDrive - Universidad Rafael Landivar\U\Año 5\Primer Ciclo\Estructura de Datos 1 (lab)\PreLab1\5\LAB01-ED1\Estructuras\obj\Debug\net6.0\Estructuras.AssemblyInfo.cs
+C:\Users\eddie\OneDrive - Universidad Rafael Landivar\U\Año 5\Primer Ciclo\Estructura de Datos 1 (lab)\PreLab1\5\LAB01-ED1\Estructuras\obj\Debug\net6.0\Estructuras.csproj.CoreCompileInputs.cache
+C:\Users\eddie\OneDrive - Universidad Rafael Landivar\U\Año 5\Primer Ciclo\Estructura de Datos 1 (lab)\PreLab1\5\LAB01-ED1\Estructuras\obj\Debug\net6.0\Estructuras.dll
+C:\Users\eddie\OneDrive - Universidad Rafael Landivar\U\Año 5\Primer Ciclo\Estructura de Datos 1 (lab)\PreLab1\5\LAB01-ED1\Estructuras\obj\Debug\net6.0\refint\Estructuras.dll
+C:\Users\eddie\OneDrive - Universidad Rafael Landivar\U\Año 5\Primer Ciclo\Estructura de Datos 1 (lab)\PreLab1\5\LAB01-ED1\Estructuras\obj\Debug\net6.0\Estructuras.pdb
+C:\Users\eddie\OneDrive - Universidad Rafael Landivar\U\Año 5\Primer Ciclo\Estructura de Datos 1 (lab)\PreLab1\5\LAB01-ED1\Estructuras\obj\Debug\net6.0\ref\Estructuras.dll
