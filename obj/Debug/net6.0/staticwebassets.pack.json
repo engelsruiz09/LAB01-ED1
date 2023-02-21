@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\LAB01-ED1-G.bundle.scp.css"
     },
     {
+      "Id": "E:\\Carlos\\source\\repos\\Estructura de Datos I\\LAB01-ED1\\wwwroot\\Uploads\\Dataset-lol-custom.csv",
+      "PackagePath": "staticwebassets\\Uploads\\Dataset-lol-custom.csv"
+    },
+    {
       "Id": "E:\\Carlos\\source\\repos\\Estructura de Datos I\\LAB01-ED1\\wwwroot\\Uploads\\mls-salaries-2007 (2).csv",
       "PackagePath": "staticwebassets\\Uploads\\mls-salaries-2007 (2).csv"
     },
