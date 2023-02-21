@@ -224,6 +224,9 @@ namespace LAB01_ED1_G.Controllers //el single controller es con la lista normal 
         [HttpPost]
         public ActionResult Edit(int id, string newCoach, string newLeague)
         {
+            cronometro.Restart();
+            Log("Modificacion de equipo");
+
             foreach (var team in Singleton.Instance.EquipoList)
             {
                 if(team.ID == id)
@@ -236,8 +239,10 @@ namespace LAB01_ED1_G.Controllers //el single controller es con la lista normal 
                     {
                         team.Liga = newLeague;
                     }
+                    cronometro.Stop();
+                    Log("Se modifico al equipo por sus parametros respectivos");
+                    return View();
                 }
-                return View();
             }
             return View();
         }
