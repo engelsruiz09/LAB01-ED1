@@ -248,11 +248,15 @@ namespace LAB01_ED1_G.Controllers //el single controller es con la lista normal 
         }
         public ActionResult Delete(int id, IFormCollection collection)
         {
+            cronometro.Restart();
+            Log("Eliminacion de Equipo");
             try
             {
                 var DeletePlayer = Singleton.Instance.EquipoList.Find(x => x.ID == id);
                 int pos = Singleton.Instance.EquipoList.IndexOf(DeletePlayer);
                 Singleton.Instance.EquipoList.RemoveAt(pos);
+                cronometro.Stop();
+                Log("Se elimino al equipo elegido");
                 return RedirectToAction(nameof(Index));
             }
             catch

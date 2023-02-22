@@ -24,73 +24,9 @@ Lista de Equipos. Y Tardo: 0 Milisegundos
  
 Se Creo Un Equipo. Y Tardo: 0 Milisegundos 
  
-Busqueda Por Nombre Del Equipo. Y Tardo: 0 Milisegundos 
- 
-Se encontro al equipo por su nombre. Y Tardo: 1 Milisegundos 
- 
 Lista de Jugadores. Tiempo: 0 Milisegundos 
-Se Creo Un Jugador. Tiempo: 0 Milisegundos 
-Lista de Jugadores. Tiempo: 0 Milisegundos 
-Se Creo Un Jugador. Tiempo: 0 Milisegundos 
-Lista de Jugadores. Tiempo: 0 Milisegundos 
-Se Creo Un Jugador. Tiempo: 0 Milisegundos 
-Lista de Jugadores. Tiempo: 0 Milisegundos 
-Se Creo Un Jugador. Tiempo: 0 Milisegundos 
-Lista de Jugadores. Tiempo: 0 Milisegundos 
-Se Creo Un Jugador. Tiempo: 0 Milisegundos 
-Lista de Jugadores. Tiempo: 0 Milisegundos 
-Se Creo Un Jugador. Tiempo: 0 Milisegundos 
-Lista de Jugadores. Tiempo: 0 Milisegundos 
-Se Creo Un Jugador. Tiempo: 0 Milisegundos 
-Lista de Jugadores. Tiempo: 0 Milisegundos 
-Se Creo Un Jugador. Tiempo: 0 Milisegundos 
-Lista de Jugadores. Tiempo: 0 Milisegundos 
-Se Creo Un Jugador. Tiempo: 0 Milisegundos 
-Lista de Jugadores. Tiempo: 0 Milisegundos 
-Se Creo Un Jugador. Tiempo: 0 Milisegundos 
-Lista de Jugadores. Tiempo: 0 Milisegundos 
-Se Creo Un Jugador. Tiempo: 0 Milisegundos 
-Lista de Jugadores. Tiempo: 0 Milisegundos 
-Se Creo Un Jugador. Tiempo: 0 Milisegundos 
-Lista de Jugadores. Tiempo: 0 Milisegundos 
-Se Creo Un Jugador. Tiempo: 0 Milisegundos 
-Lista de Jugadores. Tiempo: 0 Milisegundos 
-Se Creo Un Jugador. Tiempo: 0 Milisegundos 
-Lista de Jugadores. Tiempo: 0 Milisegundos 
-Se Creo Un Jugador. Tiempo: 0 Milisegundos 
-Lista de Jugadores. Tiempo: 0 Milisegundos 
-Se Creo Un Jugador. Tiempo: 0 Milisegundos 
-Lista de Jugadores. Tiempo: 0 Milisegundos 
-Se Creo Un Jugador. Tiempo: 0 Milisegundos 
-Lista de Jugadores. Tiempo: 0 Milisegundos 
-Se Creo Un Jugador. Tiempo: 0 Milisegundos 
-Lista de Jugadores. Tiempo: 0 Milisegundos 
-Se Creo Un Jugador. Tiempo: 0 Milisegundos 
-Lista de Jugadores. Tiempo: 0 Milisegundos 
-Se Creo Un Jugador. Tiempo: 0 Milisegundos 
-Lista de Jugadores. Tiempo: 0 Milisegundos 
-Se Creo Un Jugador. Tiempo: 0 Milisegundos 
-Lista de Jugadores. Tiempo: 0 Milisegundos 
-Se Creo Un Jugador. Tiempo: 0 Milisegundos 
-Lista de Jugadores. Tiempo: 0 Milisegundos 
-Se Creo Un Jugador. Tiempo: 0 Milisegundos 
-Lista de Jugadores. Tiempo: 0 Milisegundos 
-Se Creo Un Jugador. Tiempo: 0 Milisegundos 
-Lista de Jugadores. Tiempo: 0 Milisegundos 
-Se Creo Un Jugador. Tiempo: 0 Milisegundos 
-Lista de Jugadores. Tiempo: 0 Milisegundos 
-Se Creo Un Jugador. Tiempo: 0 Milisegundos 
-Lista de Jugadores. Tiempo: 0 Milisegundos 
-Se Creo Un Jugador. Tiempo: 0 Milisegundos 
-Lista de Jugadores. Tiempo: 0 Milisegundos 
-Se Creo Un Jugador. Tiempo: 0 Milisegundos 
-Lista de Jugadores. Tiempo: 0 Milisegundos 
-Se Creo Un Jugador. Tiempo: 0 Milisegundos 
-Lista de Jugadores. Tiempo: 0 Milisegundos 
-Se Creo Un Jugador. Tiempo: 0 Milisegundos 
-Lista de Jugadores. Tiempo: 0 Milisegundos 
-Se Creo Un Jugador. Tiempo: 0 Milisegundos 
-Lista de Jugadores. Tiempo: 0 Milisegundos 
+Se Creo Un Jugador. Tiempo: 1 Milisegundos 
+Lista de Jugadores. Tiempo: 1 Milisegundos 
 Se Creo Un Jugador. Tiempo: 0 Milisegundos 
 Lista de Jugadores. Tiempo: 0 Milisegundos 
 Se Creo Un Jugador. Tiempo: 0 Milisegundos 

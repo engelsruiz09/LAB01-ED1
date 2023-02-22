@@ -286,7 +286,7 @@ namespace LAB01_ED1_G.Controllers
         public ActionResult Edit(int id, string newRol, string newTeam)
         {
             cronometro2.Restart();
-            Log("Edicion de equipo");
+            Log("Edicion de jugador");
 
             foreach (var player in Singleton.Instance1.JugadorDList)
             {
@@ -310,10 +310,14 @@ namespace LAB01_ED1_G.Controllers
         }
         public ActionResult Delete(int id, IFormCollection collection)
         {
+            cronometro2.Restart();
+            Log("Eliminacion de Jugador");
             try
             {
                 int pos = Singleton.Instance1.JugadorDList.Find2(x => x.ID == id);
                 Singleton.Instance1.JugadorDList.RemoveAt(pos+1);
+                cronometro2.Stop();
+                Log("Se elimino el siguiente jugador de su equipo");
                 return RedirectToAction(nameof(Index));
             }
             catch
